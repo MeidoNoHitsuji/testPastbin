@@ -1,0 +1,181 @@
+body {
+    background-color: #fff;
+    color: #181818;
+    font-family: "segoe ui","trebuchet MS","Lucida Sans Unicode","Lucida Sans",Sans-Serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: auto!important;
+    height: 100%;
+}
+
+#main_frame{
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    height: 100%;
+}
+
+#content_frame{
+    min-width: 1100px;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-radius: 0 0 3px 3px;
+    border-right: 1px solid #ddd;
+    clear: both;
+    overflow: hidden;
+    padding: 10px 10px;
+    height: 100%;
+}
+
+#content_left {
+    margin-left: 10px;
+    margin-right: 192px;
+}
+
+#content_right {
+    float: right;
+    width: 160px;
+    padding: 0 10px;
+}
+
+#paste_code{
+    overflow: hidden;
+    overflow-wrap: break-word;
+    resize: horizontal;
+    height: 228px;
+    margin: 10px 0;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li .form_left{
+    line-height: 35px;
+    width: 150px;
+    margin: 0 0 10px;
+}
+
+ul li .form_full{
+    line-height: 35px;
+    height: 35px;
+    width: 450px;
+    /* margin: 0 0 10px; */
+    /* padding: 0 25px; */
+    text-align: center;
+}
+
+ul li .form_right{
+    min-width: 300px;
+    text-align: left;
+    margin: 0 0 10px;
+}
+
+input.post_input, select.post_select {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    color: #181818;
+    font-family: "segoe ui","trebuchet MS","Lucida Sans Unicode","Lucida Sans",Sans-Serif;
+    font-size: 1em;
+    width: 272px;
+    padding: 8px;
+}
+
+.button1, .button2, input.button1 {
+    background-color: #ddd;
+    border-bottom: 2px solid #ccc;
+    border-left: 0;
+    border-radius: 3px;
+    border-right: 0;
+    border-top: 0;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "segoe ui","trebuchet MS","Lucida Sans Unicode","Lucida Sans",Sans-Serif;
+    font-size: 13px;
+    font-weight: 400;
+    height: 27px;
+    line-height: 27px;
+    min-width: 54px;
+    text-align: center;
+    text-decoration: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /* padding: 0 10px; */
+}
+
+textarea.paste_code, textarea.paste_textarea {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-sizing: border-box;
+    display: block;
+    font-family: Consolas,Menlo,Monaco,"Lucida Console","Liberation Mono","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace,serif;
+    font-size: 13px;
+    height: 200px;
+    min-height: 200px;
+    line-height: 21px;
+    width: 100%;
+    padding: 8px 12px;
+}
+
+.content_title{
+    border-bottom: 2px solid #ddd;
+    color: #333;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 0 5px;
+}
+
+.no_border {
+    border: 0;
+}
+
+.content_right_title{
+    color: #333;
+    font-size: .85em;
+    font-weight: 600;
+    margin: 0 0 2px;
+}
+
+#menu_2 {
+    overflow: hidden;
+}
+
+ul.right_menu {
+    margin: 0;
+    padding: 0;
+}
+
+.right_menu li {
+    background-size: 14px;
+    border-top: 1px dotted #ddd;
+    color: #ddd;
+    font-size: .75em;
+    line-height: 16px;
+    list-style: none;
+    overflow: hidden;
+    width: 140px;
+    margin: 0;
+    padding: 5px 0 5px 20px;
+}
+
+a {
+    color: #C03;
+    text-decoration: none;
+}
+
+.right_menu span {
+    color: #999;
+    display: block;
+}
