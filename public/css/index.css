@@ -42,6 +42,7 @@ body {
     float: right;
     width: 160px;
     padding: 0 10px;
+    border-left: 1px dotted #ddd;
 }
 
 #paste_code{
@@ -55,11 +56,12 @@ body {
 ul{
     list-style-type: none;
     padding: 0;
+    margin-top: 16;
 }
 
 ul li .form_left{
     line-height: 35px;
-    width: 150px;
+    width: 200px;
     margin: 0 0 10px;
 }
 
@@ -111,6 +113,14 @@ input.post_input, select.post_select {
     -moz-appearance: none;
     -webkit-appearance: none;
     /* padding: 0 10px; */
+}
+
+.p_text{
+    font-size: 0.9em;
+    color: #666;
+    height: 100px;
+    line-height: 19px;
+    width: 300px;
 }
 
 textarea.paste_code, textarea.paste_textarea {
@@ -167,7 +177,7 @@ ul.right_menu {
     overflow: hidden;
     width: 140px;
     margin: 0;
-    padding: 5px 0 5px 20px;
+    padding: 5px 0 5px 10px;
 }
 
 a {

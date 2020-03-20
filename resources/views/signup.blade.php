@@ -7,6 +7,7 @@
                     <div class="content_title" style="text-align: center; margin: auto;">
                         Страница Регистрации
                     </div>
+                    <signupblock-component></signupblock-component>
                 </div>
             </div>
         </div>

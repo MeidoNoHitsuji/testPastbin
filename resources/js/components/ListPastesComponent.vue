@@ -3,7 +3,9 @@
         <div class="content_right_title">Public Pastes</div>
         <div id="menu_2">
             <ul class="right_menu">
-                <itempaste-component v-for="(paste) in pastes" :paste="paste"></itempaste-component> <!-- Костыльная фигня.. Но выглядит прикольно.. И в консоль льёт ошибку, хех :D -->
+                <li v-for="paste in pastes" v-bind:key="paste">
+                    <itempaste-component :paste="paste"></itempaste-component>
+                </li>   
             </ul>
         </div>
     </div>

@@ -24,6 +24,8 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('pasteform-component', require('./components/PasteFormComponent.vue').default);
 Vue.component('itempaste-component', require('./components/ItemPasteComponent.vue').default);
 Vue.component('listpastes-component', require('./components/ListPastesComponent.vue').default);
+Vue.component('loginblock-component', require('./components/LoginBlockComponent.vue').default);
+Vue.component('signupblock-component', require('./components/SignupBlockComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
