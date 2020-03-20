@@ -14,7 +14,7 @@ use Carbon\Carbon;
 class PasteController extends Controller
 {
 
-    public function dataParser($date){ //Да, да, датапарсер
+    public static function dataParser($date){ //Да, да, датапарсер
         if($date->y > 0) return $date->y . "г. назад";
         if($date->m > 0) return $date->m . " мес. назад";
         if($date->d > 0) return $date->d . " дн. назад";
@@ -24,7 +24,7 @@ class PasteController extends Controller
         return "0 сек. назад";
     }
 
-    public function GetLastPastes(){
+    public static function GetLastPastes(){
         $pastes = Paste::orderBy('id', 'desc')
                     ->take(10)
                     ->get();
@@ -64,7 +64,7 @@ class PasteController extends Controller
             }
             if($paste->exposure != ExposureType::Pub) unset($pastes[$key]);
             $paste->syntax = SyntaxType::getInstance($paste->syntax)->description;
-            $paste->interval = $this->dataParser($interval);
+            $paste->interval = PasteController::dataParser($interval);
         }
 
         return $pastes;

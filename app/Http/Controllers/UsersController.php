@@ -13,5 +13,17 @@ use Carbon\Carbon;
 
 class UsersController extends Controller
 {
-    
+    public function Signup(){
+        $data = array(
+            "pastes" => PasteController::GetLastPastes()
+        );
+        return view('signup', compact("data"));
+    }
+
+    public function Login(){
+        $data = array(
+            "pastes" => PasteController::GetLastPastes()
+        );
+        return view('login', compact("data"));
+    }
 }

@@ -18,3 +18,7 @@ Route::get('/', "PasteController@get");
 Route::get('paste/{link}', "PasteController@getpaste");
 
 Route::post('/', "PasteController@post");
+
+Route::get('/login', "UsersController@Login");
+
+Route::get('/signup', "UsersController@Signup");
