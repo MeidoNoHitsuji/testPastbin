@@ -24,7 +24,7 @@ class PasteController extends Controller
         return "0 сек. назад";
     }
 
-    public function get(){
+    public function GetLastPastes(){
         $pastes = Paste::orderBy('id', 'desc')
                     ->take(10)
                     ->get();
@@ -66,7 +66,12 @@ class PasteController extends Controller
             $paste->syntax = SyntaxType::getInstance($paste->syntax)->description;
             $paste->interval = $this->dataParser($interval);
         }
-        
+
+        return $pastes;
+    }
+
+    public function get(){
+        $pastes = $this->GetLastPastes();
         return view('main', compact("pastes"));
     }
 
@@ -74,7 +79,12 @@ class PasteController extends Controller
         $paste = Paste::where("link", $link)->first();
         if($paste != ""){
             $paste->syntax = SyntaxType::getInstance($paste->syntax)->description;
-            return view('paste', compact("paste")); //Да, можно было накинуть хедр, боттом и всё прогонять через 1 шаблон.. Но тут решил сделать так)
+            $pastes = $this->GetLastPastes();
+            $data = array(
+                "paste" => $paste,
+                "pastes" => $pastes
+            );
+            return view('paste', compact("data")); //Да, можно было накинуть хедр, боттом и всё прогонять через 1 шаблон.. Но тут решил сделать так)
         }else{
             return redirect('/');
         }
