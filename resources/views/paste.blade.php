@@ -1,9 +1,5 @@
-<html>
-    <head>
-        <link href="{{asset('css/index.css')}}" rel="stylesheet">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-    </head>
-    <body>
+@component('header')
+@endcomponent
         <div id="main_frame">
             <div id="content_frame">
                 <listpastes-component :pastes = "{{$data["pastes"]}}"></listpastes-component>
@@ -17,7 +13,5 @@
                 </div>
             </div>
         </div>
-        <script src="{{asset('js/app.js')}}" ></script>
-        <script src="{{asset('js/index.js')}}"></script>
-    </body>
-</html>
+@component('footer')
+@endcomponent

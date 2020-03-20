@@ -1,8 +1,5 @@
-<html>
-    <head>
-        <link href="css/index.css" rel="stylesheet">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-    </head>
+@component('header')
+@endcomponent
     <body>
         <div id="main_frame">
             <div id="content_frame" style="height:auto;">
@@ -10,7 +7,5 @@
                 <pasteform-component></pasteform-component>
             </div>
         </div>
-        <script src="{{asset('js/app.js')}}" ></script>
-        <script src="js/index.js"></script>
-    </body>
-</html>
+@component('footer')
+@endcomponent
